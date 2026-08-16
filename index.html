@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallway Run</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="screen">
+        <h1>HALLWAY RUN</h1>
+
+        <p>
+            Use LEFT and RIGHT arrow keys
+            to dodge obstacles.
+        </p>
+
+        <p>
+            On mobile, swipe left or right.
+        </p>
+
+        <button id="startButton">
+            START GAME
+        </button>
+    </div>
+
+
+    <!-- Game Area -->
+    <div id="gameContainer">
+
+        <div id="scoreBoard">
+            Score:
+            <span id="score">0</span>
+
+            |
+            
+            High Score:
+            <span id="highScore">0</span>
+        </div>
+
+        <div id="gameArea">
+
+            <div id="player"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen" class="screen hidden">
+
+        <h1>GAME OVER</h1>
+
+        <p>
+            Final Score:
+            <span id="finalScore">0</span>
+        </p>
+
+        <p>
+            High Score:
+            <span id="finalHighScore">0</span>
+        </p>
+
+        <div id="secretReward" class="hidden">
+
+            <h2>
+                ARCHIVE REWARD UNLOCKED
+            </h2>
+
+            <div id="rewardCode">
+                1221
+            </div>
+
+        </div>
+
+        <button id="restartButton">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
